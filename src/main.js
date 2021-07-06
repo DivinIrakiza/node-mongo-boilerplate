@@ -7,15 +7,15 @@ import cors from 'cors';
 import morgan from 'morgan';
 import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
-import swaggerOptions from './config/swagger.config';
+import swaggerOptions from './config/swagger.config.js';
+import connectDB from './config/db.config.js';
+
 
 const app = express();
 const PORT = process.env.PORT;
 const __dirname = path.resolve();
-
-
-
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
+connectDB();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -30,5 +30,5 @@ app.get('/', function (req, res) {
 
 
 app.listen(PORT, () =>
-  console.log(` Running on port ${PORT} `),
+  console.log(`Running on port ${PORT} `),
 );
