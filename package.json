@@ -1,7 +1,7 @@
 {
   "name": "node-mongo-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate code for Node.JS MongoDB fast development",
+  "description": "Minimal Boilerplate code for Node.JS, Express, MongoDB fast development",
   "main": "main.js",
   "scripts": {
     "start:dev": "babel-node src/main.js"
@@ -17,6 +17,7 @@
     "@babel/preset-env": "^7.14.7"
   },
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
   }
 }
