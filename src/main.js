@@ -48,7 +48,6 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 
 app.get('/', function (req, res) {
-    // return res.send('Jeesh! You reached the server 😊😊')
     return res.sendFile(path.join(__dirname + '/src/templates/index.html'));
 });
 
