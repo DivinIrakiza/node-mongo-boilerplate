@@ -1,10 +1,11 @@
 {
   "name": "node-mongo-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate code for Node.JS MongoDB fast development",
+  "description": "Minimal Boilerplate code for Node.JS, Express, MongoDB fast development",
   "main": "main.js",
   "scripts": {
-    "start:dev": "babel-node src/main.js"
+    "start:dev": "nodemon --exec babel-node src/main.js",
+    "serve": "node --exec babel-node src/main.js"
   },
   "repository": "https://github.com/DivinIrakiza/node-mongo-boilerplate.git",
   "author": "Divin Irakiza <irakizadivin@gmail.com>",
@@ -17,6 +18,10 @@
     "@babel/preset-env": "^7.14.7"
   },
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
   }
 }
