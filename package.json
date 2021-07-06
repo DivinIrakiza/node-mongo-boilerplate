@@ -10,9 +10,13 @@
   "author": "Divin Irakiza <irakizadivin@gmail.com>",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/node": "^7.14.7",
     "@babel/preset-env": "^7.14.7"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
   }
 }
